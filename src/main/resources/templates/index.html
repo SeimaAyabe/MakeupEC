@@ -6,6 +6,10 @@
 <meta charset="UTF-8" />
 </head>
 <body>
-	<p>Hello, berserker!</p>
+	<p th:text="${msg}">Hello, berserker!</p>
+	<form action="/" method="post">
+		<input type="text" name="text1" th:value="${value}"> <input
+			type="submit" value="登録">
+	</form>
 </body>
 </html>
