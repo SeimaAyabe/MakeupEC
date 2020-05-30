@@ -1,13 +1,19 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.demo.repositories.UsersRepository;
+
 @Controller
 public class HelloController {
+
+	@Autowired
+    private UsersRepository usersRepository;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView index(ModelAndView mav) {
@@ -27,4 +33,13 @@ public class HelloController {
 		// 表示するHTMLを指定
 		return mav;
 	}
+
+	@RequestMapping(value = "/test1", method = RequestMethod.GET)
+    public ModelAndView indextwo(ModelAndView mav) {
+		mav.setViewName("index");
+		System.out.println(usersRepository.findAll());
+        Iterable<Users> list = usersRepository.findAll();
+        mav.addObject("data", list);
+        return mav;
+    }
 }

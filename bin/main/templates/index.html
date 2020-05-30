@@ -6,10 +6,11 @@
 <meta charset="UTF-8" />
 </head>
 <body>
-	<p th:text="${msg}">Hello, berserker!</p>
-	<form action="/" method="post">
-		<input type="text" name="text1" th:value="${value}"> <input
-			type="submit" value="登録">
-	</form>
+	<table>
+		<tr th:each="obj : ${data}">
+			<td th:text="${obj.id}"></td>
+			<td th:text="${obj.name}"></td>
+		</tr>
+	</table>
 </body>
 </html>
