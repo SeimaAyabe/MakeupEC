@@ -6,6 +6,160 @@
 <meta charset="UTF-8" />
 </head>
 <body>
+	<div class="wrapIn">
+		<div class="cateSelect">
+			<p class="selectTxt">
+				<span class="txtIn"><span class="txtIn2"><span
+						class="txtIn3">すべて</span><span class="dot"
+						style="visibility: hidden;">...</span></span></span>
+			</p>
+			<select class="modalFormArea" id="selectCategoryLl" name="categoryLl"><option
+					value="">すべて</option>
+				<option value="01">事務用品／文房具</option>
+				<option value="10">ファイル</option>
+				<option value="02">トナー／インク／コピー用紙</option>
+				<option value="03">パソコン／周辺機器／メディア</option>
+				<option value="21">事務機器／家電／電池／照明</option>
+				<option value="07">オフィス家具／収納</option>
+				<option value="15">生活雑貨／キッチン用品</option>
+				<option value="13">飲料／食品／ギフト／お酒</option>
+				<option value="09">衛生／医療／介護</option>
+				<option value="14">テープ／梱包資材／店舗用品</option>
+				<option value="24">物流・現場用品／台車</option>
+				<option value="23">工具／電動工具</option>
+				<option value="06">切削工具／研磨材</option>
+				<option value="26">計測機器</option>
+				<option value="34">研究開発・クリーンルーム用品</option>
+				<option value="22">機械部品／空圧機器／電気・電子部品</option>
+				<option value="25">作業服／ワークウェア／安全保護具</option>
+				<option value="19">土木・建築資材</option></select>
+		</div>
+		<button type="button" class="ren_Btn_search"
+			onclick="detailsSearchUrl('cmnHeaderForm')">検索</button>
+		<div class="inputField">
+			<input class="modalFormArea" id="searchWordHeader"
+				name="searchWordHeader" autocomplete="off" value=""
+				placeholder="商品名やお申込番号、型番で検索">
+			<div class="detailSetting">
+				<a id="searchModal" href="#">詳細設定</a>
+			</div>
+			<div class="detailModal">
+				<div class="detailModalClosed">
+					<a href="#"><img
+						src="/resource/images/mycatalog/1710_icn_close03.png" alt=""></a>
+				</div>
+				<div class="detailModalInner">
+					<div class="conditionInput">
+						<div class="inputBlock checkArea">
+							<div class="inputTitle">
+								<p>検索範囲</p>
+							</div>
+							<div class="inputBox">
+								<label for="searchRange"><span class="checkIcon"><span></span><input
+										class="modalFormArea" type="checkbox" name="searchRange"
+										id="searchRange"></span><span class="checkText">商品名・カテゴリ名のみで探す</span></label>
+							</div>
+						</div>
+						<div class="inputBlock textArea">
+							<div class="inputTitle">
+								<p>除外ワード</p>
+							</div>
+							<div class="inputBox">
+								<p class="inputText">
+									<input class="modalFormArea" id="excludeWord" type="text"
+										placeholder="キーワードを入力してください"><span class="ngword">を除く</span>
+								</p>
+							</div>
+						</div>
+						<div class="inputBlock selectArea">
+							<div class="inputTitle">
+								<p>価格を指定（税込）</p>
+							</div>
+							<div class="inputBox">
+								<div class="selectField">
+									<label for="searchPrice01"><p class="selectText">指定なし</p>
+										<select class="modalFormArea" name="price01"
+										id="searchPrice01"><option value="">指定なし</option>
+											<option value="100">100円</option>
+											<option value="200">200円</option>
+											<option value="500">500円</option>
+											<option value="1000">1,000円</option>
+											<option value="3000">3,000円</option>
+											<option value="5000">5,000円</option>
+											<option value="10000">10,000円</option>
+											<option value="20000">20,000円</option></select> </label>
+								</div>
+								<p class="tildeMark">～</p>
+								<div class="selectField">
+									<label for="searchPrice02"><p class="selectText">指定なし</p>
+										<select class="modalFormArea" name="price02"
+										id="searchPrice02"><option value="">指定なし</option>
+											<option value="100">100円</option>
+											<option value="200">200円</option>
+											<option value="500">500円</option>
+											<option value="1000">1,000円</option>
+											<option value="3000">3,000円</option>
+											<option value="5000">5,000円</option>
+											<option value="10000">10,000円</option>
+											<option value="20000">20,000円</option></select></label>
+								</div>
+							</div>
+						</div>
+						<div class="inputBlock checkArea">
+							<div class="inputTitle">
+								<p>商品</p>
+							</div>
+							<div class="inputBox">
+								<label for="stockCheck"><span class="checkIcon"><span></span><input
+										type="checkbox" class="modalFormArea" name="stockCheck"
+										id="stockCheck"></span><span class="checkText">直送品、お取り寄せ品を除く</span></label>
+							</div>
+						</div>
+						<div id="apiResultItemCount" class="searchResult">
+							<p class="attentionSearchText">検索条件を指定してください</p>
+							<p class="resultNumber">
+								<span id="modalFormAreaNum"></span>件が該当
+							</p>
+							<p class="detailSearchBtn">
+								<button onclick="detailsSearchUrl('cmnHeaderForm')">検索</button>
+							</p>
+						</div>
+						<div class="moreDetailSpecify">
+							<p>
+								<a href="/ctg/search/searchByKeywordDetailConditionView/">もっと詳細に指定する</a>
+							</p>
+						</div>
+					</div>
+					<div class="otherSearch">
+						<p class="searchTitle">その他便利な検索</p>
+						<ul class="searchList">
+							<li><a href="/f/before/toner/">トナー・インク検索</a></li>
+							<li><a href="/f/special/lampsearch/">ランプかんたん検索</a></li>
+							<li><a href="/f/special/refill/">ボールペン替芯かんたん検索</a></li>
+							<li><a href="/f/special/stampink/">はんこ補充インクかんたん検索</a></li>
+							<li><a href="/ctg/search/makerModelSearchView/?maker=smc">SMC製品検索</a></li>
+							<li><a href="/ctg/search/searchByCtgView/">カタログから探す</a></li>
+							<li><a href="/maker/4001/">メーカー名から探す</a></li>
+							<li><a href="/categoryindex/a/">50音から探す</a></li>
+							<li><a href="/brand/3101/">ブランドから探す</a></li>
+							<li><a href="/green/">グリーン商品を探す</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<input class="tmpParamType" type="hidden" value="0"><input
+				class="tmpParamLll" type="hidden" value=""><input
+				class="tmpParamLl" type="hidden" value=""><input
+				class="tmpParamL" type="hidden" value=""><input
+				class="tmpParamM" type="hidden" value=""><input
+				class="tmpParamS" type="hidden" value=""><input
+				class="tmpParamKeyword" type="hidden" value=""><input
+				class="paramLl" id="paramLl" type="hidden" value=""><input
+				class="paramL" id="paramL" type="hidden" value=""><input
+				class="paramM" id="paramM" type="hidden" value=""><input
+				class="paramS" id="paramS" type="hidden" value="">
+		</div>
+	</div>
 	<table>
 		<tr th:each="obj : ${data}">
 			<td th:text="${obj.id}"></td>
