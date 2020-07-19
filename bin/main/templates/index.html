@@ -166,5 +166,13 @@
 			<td th:text="${obj.name}"></td>
 		</tr>
 	</table>
+	<span id="result"></span>
+	<script type="text/javascript">
+		var current = new Date();
+		var result = document.getElementById('result');
+		result.textContent = current.toLocaleString();
+
+		window.alert("Hello World!");
+	</script>
 </body>
 </html>
