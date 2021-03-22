@@ -1,4 +1,4 @@
-<mxfile modified="2021-03-22T12:17:39.956Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="yoooEvPpFDydFHv_C28s" version="14.4.9" type="github">
+<mxfile modified="2021-03-22T12:18:43.509Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="uS4nCva9yvuD3UUuchM_" version="14.4.9" type="github">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="SampleEC">
     <mxGraphModel dx="1186" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -73,8 +73,8 @@
         <mxCell id="UEzPUAAOIrF-is8g5C7q-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;strokeWidth=2;strokeColor=#545B64;startArrow=none;" parent="1" source="UEzPUAAOIrF-is8g5C7q-50" target="UEzPUAAOIrF-is8g5C7q-51" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-QjtrjUzRDEMRZ5MF8oH-47" value="Infrastructure_Constitution (Sample_EC)&lt;br&gt;&amp;nbsp;" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=30;fontStyle=1" parent="1" vertex="1">
-          <mxGeometry x="12" y="40" width="600" height="70" as="geometry" />
+        <mxCell id="-QjtrjUzRDEMRZ5MF8oH-47" value="インフラ構成図 (Sample_EC)&lt;br&gt;&amp;nbsp;" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=30;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="12" y="40" width="420" height="70" as="geometry" />
         </mxCell>
         <mxCell id="UEzPUAAOIrF-is8g5C7q-6" value="Factory" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#277116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.factory;" parent="1" vertex="1">
           <mxGeometry x="26.000000000000156" y="399.99999999999994" width="78" height="78" as="geometry" />
@@ -116,10 +116,10 @@
           <mxGeometry x="958" y="674.5" width="78" height="78" as="geometry" />
         </mxCell>
         <mxCell id="2Iw9WsyMeU-idhznXm-Y-2" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1280" y="240" width="80" height="97.5" as="geometry" />
+          <mxGeometry x="1520" y="260.25" width="80" height="97.5" as="geometry" />
         </mxCell>
-        <mxCell id="2Iw9WsyMeU-idhznXm-Y-3" value="Developer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
-          <mxGeometry x="1225" y="410" width="70" height="20" as="geometry" />
+        <mxCell id="2Iw9WsyMeU-idhznXm-Y-3" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Developer&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="370" width="100" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
