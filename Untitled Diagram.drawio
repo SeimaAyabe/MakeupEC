@@ -1,4 +1,4 @@
-<mxfile modified="2021-03-23T10:14:19.706Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="vcNYYM4-leafYu9Ri8C9" version="14.4.9" type="github">
+<mxfile modified="2021-03-23T10:16:50.698Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="_UcVrnqNQcx8y02FW4qI" version="14.4.9" type="github">
   <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="SampleEC">
     <mxGraphModel dx="1186" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -130,7 +130,7 @@
             <mxPoint x="1519.5" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="d8Eb1mQDk7OvnFmK3lpO-11" value="&lt;span style=&quot;font-size: 18px&quot;&gt;push to master branch&lt;/span&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="d8Eb1mQDk7OvnFmK3lpO-10">
+        <mxCell id="d8Eb1mQDk7OvnFmK3lpO-11" value="&lt;span style=&quot;font-size: 18px&quot;&gt;master branchにpush&lt;/span&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="d8Eb1mQDk7OvnFmK3lpO-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
